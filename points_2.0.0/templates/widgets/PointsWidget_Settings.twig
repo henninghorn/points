@@ -1,0 +1,26 @@
+{#
+/**
+ * Points plugin for Craft CMS
+ *
+ * PointsWidget Settings
+ *
+ * @author    Jason Mayo
+ * @copyright Copyright (c) 2017 Jason Mayo
+ * @link      bymayo.co.uk
+ * @package   Points
+ * @since     2.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "points/css/Points_Style.css" %}
+{% includeJsResource "points/js/Points_Script.js" %}
+
+{{ forms.textField({
+    label: 'Some Setting',
+    instructions: 'Enter some setting here.',
+    id: 'someSetting',
+    name: 'someSetting',
+    value: settings['someSetting']})
+}}
